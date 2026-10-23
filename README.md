@@ -25,3 +25,8 @@ BUSM410-DataVerse
 **Find the busiest hours**
 
 <img width="1334" height="894" alt="image" src="https://github.com/user-attachments/assets/e47863c4-1da1-4354-95d9-5ae3975f4c4e" />
+
+**Count How many year**
+
+<img width="1397" height="891" alt="image" src="https://github.com/user-attachments/assets/45f44071-d351-4fad-b29b-da055002dcec" />
+
