@@ -30,3 +30,12 @@ BUSM410-DataVerse
 
 <img width="1397" height="891" alt="image" src="https://github.com/user-attachments/assets/45f44071-d351-4fad-b29b-da055002dcec" />
 
+****
+<img width="1363" height="869" alt="image" src="https://github.com/user-attachments/assets/e2d90544-c1b0-4da2-ab53-cda3a11664fc" />
+
+**Busiest Day of the Week by Month in Chicago (2020)**
+
+<img width="1363" height="891" alt="image" src="https://github.com/user-attachments/assets/e4fb9e59-8a26-4611-b480-8a9fd8775e4b" />
+
+
+
