@@ -13,3 +13,6 @@ BUSM410-DataVerse
 **BigQuery Table:**
 `bigquery-public-data.chicago_taxi_trips.taxi_trips`
   
+
+
+<img width="671" height="453" alt="image" src="https://github.com/user-attachments/assets/61bfe6e2-d119-43f7-807e-7aab1e83fd64" />
