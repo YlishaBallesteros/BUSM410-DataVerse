@@ -37,5 +37,10 @@ BUSM410-DataVerse
 
 <img width="1363" height="891" alt="image" src="https://github.com/user-attachments/assets/e4fb9e59-8a26-4611-b480-8a9fd8775e4b" />
 
+**The busiest time for each day of the week in 2020**
+
+<img width="1308" height="857" alt="image" src="https://github.com/user-attachments/assets/38d15073-cc8b-47d1-9183-7229bc24f8db" />
+
+
 
 
