@@ -1,0 +1,19 @@
+Table taxi_trips {
+  unique_key string [pk, note: 'Unique identifier for a recorded trip; confirm uniqueness in source data.']
+  taxi_id string
+  trip_start_timestamp timestamp
+  trip_end_timestamp timestamp
+  trip_seconds integer
+  trip_miles float
+  pickup_community_area integer
+  dropoff_community_area integer
+  fare float
+  tips float
+  tolls float
+  extras float
+  trip_total float
+  payment_type string
+  company string
+}
+
+Note: 'Single public source table; this diagram documents selected fields only. Verify names and types against BigQuery schema before relying on it.'

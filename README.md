@@ -1,3 +1,39 @@
+# BUSM410-DataVerse
+
+Team project by Ylisha Ballesteros and Layhok Houn (Canvas team: DataVerse).
+
+| Item | Value |
+|---|---|
+| Dataset | Chicago Taxi Trips |
+| BigQuery table | `bigquery-public-data.chicago_taxi_trips.taxi_trips` |
+| Google Cloud project | `enduring-smile-509700-n5` |
+
+## Problem framing
+
+This project is measuring how Chicago taxi trip activity changed between 2019 and 2020. The proposed benchmark is the 2019 calendar year, and the proposed outcome measures are recorded trip count and recorded fare amount. The size and dollar value of the gap are pending the saved BigQuery queries and result review; no values are estimated here. See [charter.md](charter.md) for the question and scope and [findings.md](findings.md) for the evidence-backed result once available.
+
+## Explore the work
+
+| File or link | What it’s for |
+|---|---|
+| [charter.md](charter.md) | Project question, intended decision, scope, and success criteria |
+| [findings.md](findings.md) | Measured gap, benchmark, fare calculation, chart, and limitations |
+| [sql/README.md](sql/README.md) | Query sequence, cleaning checks, and analysis decisions |
+| [sql/](sql/) | Numbered BigQuery SQL queries |
+| [visuals/](visuals/) | Final comparison chart |
+| [Other/](Other/) | Dataset documentation, table diagram, and audit records |
+| [AGENTS.md](AGENTS.md) | Project facts and working guidance |
+| [ChatGPT.md](ChatGPT.md) | Points ChatGPT to the shared project guidance |
+
+## Data source
+
+The analysis uses the BigQuery public table above. The City of Chicago dataset documentation is linked in [Other/README.md](Other/README.md). Data files are not stored in this repository.
+
+## Earlier exploration
+
+The project began by exploring total taxi trips, busy weekdays and hours, available years, and 2020 weekday patterns. The original exploration screenshots are retained below as project history; final CP1 findings and chart will be documented separately.
+
+<!-- Existing CP0 screenshots can be restored here if needed from their original README revision. -->
 BUSM410-DataVerse
 
 **Team Members:**
@@ -40,6 +76,8 @@ BUSM410-DataVerse
 **The busiest time for each day of the week in 2020**
 
 <img width="1308" height="857" alt="image" src="https://github.com/user-attachments/assets/38d15073-cc8b-47d1-9183-7229bc24f8db" />
+
+
 
 
 
