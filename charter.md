@@ -2,22 +2,26 @@
 
 ## The question
 
-How did the number of recorded Chicago taxi trips and recorded fare revenue change from 2019 to 2020?
+During 2023, which hours and days had the most Chicago taxi trips, and when was recorded taxi fare highest?
 
 ## The decision this supports
 
-This analysis can help Chicago transportation stakeholders and taxi industry decision makers understand how trip activity changed during 2020 and where further investigation may be useful. The data alone cannot establish why the change occurred or what action should be taken.
+Taxi company managers can use the results to schedule driver availability around demand and understand when recorded fares are highest. The data describes historical patterns; it does not prove that changing staffing will cause revenue or service improvements.
 
 ## Scope
 
-The project uses the public BigQuery table `bigquery-public-data.chicago_taxi_trips.taxi_trips`. The proposed comparison is calendar year 2020 against calendar year 2019. One row represents one recorded taxi trip. The query will document the date, duplicate, fare, and timestamp checks before finalizing the gap and dollar estimate.
+The project uses `bigquery-public-data.chicago_taxi_trips.taxi_trips`. It analyzes trips whose start date falls in calendar year 2023, using Chicago local time. The year-coverage query shows source timestamps from January 1 through December 31, 2023; confirm the local-date boundary coverage before finalizing the population. 2020 and 2021 are absent, and the nearby years 2019 and 2022 are partial. One source row is one recorded trip, subject to duplicate-key and data-quality checks. Fare revenue means the sum of the `fare` field; tips, tolls, extras, and trip total are not included in that measure.
+
+The analysis answers three questions:
+
+1. Which hours of the day have the most recorded trips?
+2. Which weekdays and weekday-hour combinations have the most trips?
+3. Which weekdays and hours have the highest recorded fare totals?
 
 ## What success looks like
 
-- The 2019 and 2020 comparison is reproducible from saved SQL.
-- The analysis defines the trip population and reports cleaning checks.
-- Findings report the measured difference, benchmark, and fare calculation with caveats.
-- One chart compares both years and is linked from `findings.md`.
-- Data sources and project decisions are documented, with human checks recorded in the audit log.
-
-The comparison and decision framing are a working proposal until the query is run and the results are reviewed.
+- Each question is answered by saved, reproducible SQL.
+- Query notes document the date scope, missing values, duplicates, impossible values, and any exclusions.
+- Findings show the busiest categories, comparisons to appropriate averages, and recorded fare totals without claiming causal effects.
+- At least one chart compares the peak with its benchmark and is linked from `findings.md`.
+- Dataset documentation, table diagram, and human audit records are included in the repository.
