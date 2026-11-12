@@ -6,5 +6,7 @@ The analysis source is the BigQuery public table `bigquery-public-data.chicago_t
 - City of Chicago source and field documentation: [Taxi Trips data portal](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew)
 - Project table diagram: [taxi_trips.svg](taxi_trips.svg)
 - Editable diagram source: [taxi_trips.dbml](taxi_trips.dbml)
+- Team agent workflow: [audit_protocol.md](audit_protocol.md)
+- Human review record: [audit_log.md](audit_log.md)
 
 The City portal documents the trip identifier, start/end timestamps, distance, fare, tips, tolls, extras, total, payment type, and company fields. Confirm that the BigQuery schema matches the fields used by each saved query. No data extract is stored in this repository.

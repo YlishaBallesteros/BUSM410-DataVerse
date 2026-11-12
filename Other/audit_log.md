@@ -1,6 +1,6 @@
 # Audit Log
 
-Summary: The project team supplied screenshots and query results from BigQuery for the year-coverage query, 2023 data profile, trip demand, and recorded fare summaries. The visible quality evidence does not show the negative-value or timestamp-order columns. No named reviewer or explicit final project approval is recorded. The protocol in `../audit_protocol.md` remains proposed and awaits project-owner approval.
+Summary: The project team supplied screenshots and query results from BigQuery for the year-coverage query, 2023 data profile, trip demand, recorded fare summaries, and matched 2019–2023 trip comparison. The quality output shows 85 end-before-start rows, which remain included and are documented. No named reviewer or explicit final project approval is recorded. The team's agent workflow is documented in `audit_protocol.md`.
 
 | Category | Entries |
 |---|---|
@@ -8,7 +8,7 @@ Summary: The project team supplied screenshots and query results from BigQuery f
 | Verified a claim | Query outputs supplied for year coverage, 2023 profile, demand, fares, and the matched 2019–2023 benchmark; details and limits below. |
 | Separated fact from interpretation | Findings describe observed trip counts and recorded fare, not profit or causal impact. |
 | Changed the analysis | None evidenced in the supplied BigQuery outputs. |
-| Improved agent instructions | Project facts in `../AGENTS.md`; proposed audit protocol in `../audit_protocol.md` pending approval. |
+| Improved agent instructions | Project facts in `../AGENTS.md`; team workflow in `audit_protocol.md`. |
 
 ## Caught an error
 
@@ -38,4 +38,4 @@ No analysis change is evidenced in the supplied query outputs.
 
 | Date | Change | Evidence |
 |---|---|---|
-| Date not captured | Project-specific facts and a proposed review protocol are documented. Protocol approval remains pending. | `../AGENTS.md` and `../audit_protocol.md`. |
+| 2026-11-11 | Project owner (name not captured) reviewed the professor's protocol feedback and requested updating the workflow text, removing its status line, and moving it into `Other/`. | Professor comment shared in the project conversation and the current `audit_protocol.md`. |

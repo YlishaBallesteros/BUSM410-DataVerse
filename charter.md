@@ -2,26 +2,20 @@
 
 ## The question
 
-During 2023, which hours and days had the most Chicago taxi trips, and when was recorded taxi fare highest?
+How much lower were Chicago taxi trips in the matched January 1–September 29 period of 2023 than in 2019, and what is the estimated recorded-fare equivalent of that difference?
 
 ## The decision this supports
 
-Taxi company managers can use the results to schedule driver availability around demand and understand when recorded fares are highest. The data describes historical patterns; it does not prove that changing staffing will cause revenue or service improvements.
+Managers can use the comparison to understand the scale of the lower recorded trip volume when planning capacity. The fare equivalent is an estimate based on the 2023 average fare per fare-bearing trip; it is not a forecast, realized loss, or proof that a staffing change would recover that amount.
 
 ## Scope
 
-The project uses `bigquery-public-data.chicago_taxi_trips.taxi_trips`. It analyzes trips whose start date falls in calendar year 2023, using Chicago local time. The year-coverage query shows source timestamps from January 1 through December 31, 2023; confirm the local-date boundary coverage before finalizing the population. 2020 and 2021 are absent, and the nearby years 2019 and 2022 are partial. One source row is one recorded trip, subject to duplicate-key and data-quality checks. Fare revenue means the sum of the `fare` field; tips, tolls, extras, and trip total are not included in that measure.
-
-The analysis answers three questions:
-
-1. Which hours of the day have the most recorded trips?
-2. Which weekdays and weekday-hour combinations have the most trips?
-3. Which weekdays and hours have the highest recorded fare totals?
+The analysis uses `bigquery-public-data.chicago_taxi_trips.taxi_trips` and groups timestamps in `America/Chicago`. It compares the same 272 local dates, January 1 through September 29, in 2019 and 2023. One source row is one recorded taxi trip. The dollar estimate applies the 2023 full-year recorded-fare average ($142,690,533.04 / 6,415,469 fare-bearing trips) to the matched-period trip-count difference. `fare` excludes tips, tolls, extras, and trip total. The table's 85 end-before-start records remain included; the analysis does not calculate trip duration.
 
 ## What success looks like
 
-- Each question is answered by saved, reproducible SQL.
-- Query notes document the date scope, missing values, duplicates, impossible values, and any exclusions.
-- Findings show the busiest categories, comparisons to appropriate averages, and recorded fare totals without claiming causal effects.
-- At least one chart compares the peak with its benchmark and is linked from `findings.md`.
-- Dataset documentation, table diagram, and human audit records are included in the repository.
+- Saved SQL reproduces the matched-period trip totals and the 2023 fare average used in the estimate.
+- Findings identify the row unit, 2019 benchmark, 2023 comparison window, difference, dollar-equivalent math, and source queries.
+- One chart communicates this single gap and the fare-equivalent estimate.
+- Limitations state that the fare equivalent is estimated and does not establish causality or profit.
+- Dataset documentation, table diagram, and human audit records are present.

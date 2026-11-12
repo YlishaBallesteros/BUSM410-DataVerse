@@ -2,6 +2,8 @@
 
 Source: `bigquery-public-data.chicago_taxi_trips.taxi_trips`. Main analysis scope is trips starting in calendar year 2023, using `America/Chicago` local time. The project team supplied results for the year-coverage query and queries 01–05; summaries below are transcribed from that evidence. Confirm field names and types and review the estimated bytes processed before rerunning any query; only the query 04 estimate is recorded here.
 
+The single CP1 gap uses matched-period trip counts from query 05 and a clearly labeled fare-equivalent estimate based on query 01 and query 04. Queries 02 and 03 retain supporting exploratory demand outputs; they are not additional gaps in the final findings.
+
 ## Query sequence
 
 0. [00_year_coverage.sql](00_year_coverage.sql) summarizes record counts and timestamp ranges by UTC year. The supplied output reports no rows for 2020 or 2021 and partial coverage in 2019 and 2022; 2023 spans Jan 1–Dec 31 UTC.
