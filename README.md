@@ -12,6 +12,8 @@ Team project by Ylisha Ballesteros and Layhok Houn (Canvas team: DataVerse).
 
 The project focuses on one manager-relevant gap: the difference in recorded taxi trips between matched 2019 and 2023 periods. One source row represents one recorded taxi trip. Across the same 272 Chicago-local dates (Jan 1–Sep 29), the table has 16,386,009 trips in 2019 and 4,839,408 in 2023: **11,546,601 fewer trips (70.5%)**. To give the gap a dollar scale, the 2023 average recorded fare was $142,690,533.04 / 6,415,469 fare-bearing trips ≈ $22.24163706 per trip. Applying that mean gives an **estimated fare equivalent of $256,815,308.67** (11,546,601 × [$142,690,533.04 / 6,415,469]). This estimate is not an observed fare shortfall, profit, or causal staffing impact. See [query 05](sql/05_matched_period_benchmark_2019_2023.sql), [findings.md](findings.md), and [sql/README.md](sql/README.md) for the period, source, assumptions, and calculations.
 
+The COVID-19 pandemic is a plausible contributing factor, since Chicago taxi research documented a sharp mobility drop at the pandemic's onset and a recovery that remained below pre-pandemic levels. This project does not isolate the pandemic's effect from other causes. ([Source study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9070917/))
+
 The 85 records with end timestamps earlier than their start remain in the trip counts; no rows were excluded. The [gap chart](visuals/gap_chart.svg) shows the single matched-period comparison. The 2023 local-date boundary confirmation remains a review item.
 
 ## Explore the work

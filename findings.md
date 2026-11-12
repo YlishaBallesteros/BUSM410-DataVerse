@@ -16,6 +16,8 @@ To express the scale in dollars, apply the observed 2023 mean recorded fare to t
 
 The trip counts come from [query 05](sql/05_matched_period_benchmark_2019_2023.sql). The 2023 fare total comes from [query 04](sql/04_fare_by_day_hour_2023.sql), and the 6,415,469 fare-bearing trip count is 6,427,460 scoped rows minus 11,991 null fares from [query 01](sql/01_data_quality_2023.sql). The $256.8 million is an **estimated fare equivalent**, not an observed 2019-versus-2023 fare shortfall, profit, preventable loss, or causal impact. It assumes each trip in the count difference would have earned the average recorded fare observed across all of 2023.
 
+COVID-19 is a plausible contributing factor to the lower 2023 volume. A Chicago taxi-trip study observed a sharp decline in mobility during the pandemic's onset and a recovery that remained below pre-pandemic levels. Our endpoint comparison does not isolate the pandemic's contribution or distinguish it from other changes; treat COVID-19 as context, not a proven cause. ([Chicago taxi mobility study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9070917/))
+
 ## The benchmark
 
 2019 is the earlier-period benchmark because the table has no 2020 or 2021 records, while 2022 begins partway through the year. The 2019 data extends from January into early October, so this comparison uses the same complete Jan 1–Sep 29 local-date window in 2019 and 2023. Equal 272-day windows make the trip-count comparison more meaningful than comparing the partial 2019 total with the full 2023 total. The benchmark shows the scale of the recorded decline; it does not explain why it occurred.
