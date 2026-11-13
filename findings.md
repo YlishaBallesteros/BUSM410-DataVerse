@@ -28,9 +28,11 @@ For a manager, the estimated **$256,815,308.67 fare equivalent** communicates th
 
 ## Chart
 
-The chart compares the matched-period trip totals and displays the single trip-count gap and fare-equivalent estimate. It also names COVID-19 as a possible contributing factor, with a note that this comparison does not establish causation.
+The chart shows the project’s 2019–2023 gap on the left and the published COVID-era context as a separate bar pair on the right.
 
-![Matched-period Chicago taxi trips in 2019 and 2023, the estimated fare equivalent, and COVID-19 as a possible contributing factor](visuals/gap_chart.svg)
+![Matched-period Chicago taxi trip gap beside separate COVID-era study bars](visuals/gap_chart.svg)
+
+**COVID-19 context below the chart:** A Chicago taxi mobility study covering January–October 2020 reports an average of 32,917 trips per day before the pandemic period and approximately 1,553 during the crisis, a study-reported decrease of about 95.3%. These bars use the study's own period definitions and source; they are contextual evidence, not additional observations from this project's BigQuery comparison. The study describes a sharp decline during the pandemic's onset and partial recovery that remained below pre-pandemic levels. [Read the Chicago taxi mobility study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9070917/).
 
 ## Limits
 
