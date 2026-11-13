@@ -28,9 +28,9 @@ For a manager, the estimated **$256,815,308.67 fare equivalent** communicates th
 
 ## Chart
 
-The chart compares only the matched-period trip totals and displays the single trip-count gap and its fare-equivalent estimate.
+The chart compares the matched-period trip totals and displays the single trip-count gap and fare-equivalent estimate. It also names COVID-19 as a possible contributing factor, with a note that this comparison does not establish causation.
 
-![Matched-period Chicago taxi trips in 2019 and 2023 with the trip gap and estimated fare equivalent](visuals/gap_chart.svg)
+![Matched-period Chicago taxi trips in 2019 and 2023, the estimated fare equivalent, and COVID-19 as a possible contributing factor](visuals/gap_chart.svg)
 
 ## Limits
 

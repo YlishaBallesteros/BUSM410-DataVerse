@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="655" viewBox="0 0 1000 655" role="img" aria-labelledby="title desc">
   <title id="title">Matched-period Chicago taxi trips and estimated fare equivalent</title>
-  <desc id="desc">The same 272 Chicago-local dates from January 1 to September 29 had 16,386,009 trips in 2019 and 4,839,408 trips in 2023, a decline of 11,546,601 trips or 70.5 percent. Applying the 2023 average recorded fare per fare-bearing trip estimates a fare equivalent of 256,815,308 dollars and 67 cents. This is not an observed fare loss.</desc>
+  <desc id="desc">The same 272 Chicago-local dates from January 1 to September 29 had 16,386,009 trips in 2019 and 4,839,408 trips in 2023, a decline of 11,546,601 trips or 70.5 percent. Applying the 2023 average recorded fare per fare-bearing trip estimates a fare equivalent of 256,815,308 dollars and 67 cents. COVID-19 is a possible contextual factor, but this comparison does not establish causation.</desc>
   <rect width="1000" height="610" fill="#ffffff"/>
   <text x="90" y="43" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#172b4d">One gap: fewer taxi trips in the matched 2023 period</text>
   <text x="90" y="72" font-family="Arial, sans-serif" font-size="15" fill="#53677b">BigQuery records · Jan 1–Sep 29 · Chicago local dates · 272 days in each period</text>
@@ -22,8 +22,12 @@
   <text x="375" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#26394d">2019 benchmark</text>
   <text x="625" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#26394d">2023</text>
   <text x="500" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9d443b">11,546,601 fewer trips · 70.5% decrease</text>
-  <rect x="90" y="475" width="820" height="83" rx="8" fill="#f0f5f9"/>
-  <text x="115" y="505" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#172b4d">Estimated recorded-fare equivalent: $256,815,308.67</text>
-  <text x="115" y="531" font-family="Arial, sans-serif" font-size="13" fill="#53677b">11,546,601 × ($142,690,533.04 / 6,415,469 fare-bearing trips) = $256,815,308.67</text>
-  <text x="90" y="585" font-family="Arial, sans-serif" font-size="12" fill="#6a7785">Estimate based on the 2023 mean fare per trip; not an observed fare shortfall, profit, or causal impact.</text>
+  <rect x="90" y="475" width="820" height="101" rx="8" fill="#f0f5f9"/>
+  <text x="115" y="501" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#172b4d">Estimated recorded-fare equivalent: $256,815,308.67</text>
+  <text x="115" y="526" font-family="Arial, sans-serif" font-size="13" fill="#53677b">11,546,601 × ($142,690,533.04 / 6,415,469 fare-bearing trips) = $256,815,308.67</text>
+  <text x="115" y="555" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#8a4e1d">Possible context: COVID-19 disruption; this comparison does not establish causation.</text>
+  <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9070917/" target="_blank">
+    <text x="90" y="605" font-family="Arial, sans-serif" font-size="12" fill="#1769aa" text-decoration="underline">Context source: Chicago taxi mobility study during COVID-19</text>
+  </a>
+  <text x="90" y="635" font-family="Arial, sans-serif" font-size="12" fill="#6a7785">Fare equivalent uses the 2023 mean fare; it is not an observed shortfall, profit, or staffing impact.</text>
 </svg>
